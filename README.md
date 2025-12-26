@@ -51,6 +51,7 @@ By utilizing Lambda and Athena instead of an EC2 instance or an RDS database, th
 
 📊 SQL Sample
 -------------
+```text
 .
 ├── src/
 │   ├── processor_lambda.py       # Transforming data
@@ -58,3 +59,5 @@ By utilizing Lambda and Athena instead of an EC2 instance or an RDS database, th
 ├── sql/
 │   ├── athena_setup.sql          # Athena setup
 ├── README.md                     # Project documentation
+
+```
