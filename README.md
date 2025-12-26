@@ -65,7 +65,7 @@ FROM financial_data_table;
 │   ├── processor_lambda.py       # Transforming data
 │   ├── producer.py               # Ingesting data
 ├── sql/
-│   ├── athena_setup.sql          # Athena setup
+│   └── athena_setup.sql          # Athena setup
 └── README.md                     # Project documentation
 
 ```
