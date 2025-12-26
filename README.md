@@ -63,7 +63,7 @@ FROM financial_data_table;
 .
 ├── src/
 │   ├── processor_lambda.py       # Transforming data
-│   ├── producer.py               # Ingesting data
+│   └── producer.py               # Ingesting data
 ├── sql/
 │   └── athena_setup.sql          # Athena setup
 └── README.md                     # Project documentation
