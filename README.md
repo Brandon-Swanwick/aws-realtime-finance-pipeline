@@ -66,6 +66,6 @@ FROM financial_data_table;
 │   ├── producer.py               # Ingesting data
 ├── sql/
 │   ├── athena_setup.sql          # Athena setup
-├── README.md                     # Project documentation
+└── README.md                     # Project documentation
 
 ```
