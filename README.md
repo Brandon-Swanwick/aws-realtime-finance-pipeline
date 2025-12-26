@@ -53,7 +53,6 @@ By utilizing Lambda and Athena instead of an EC2 instance or an RDS database, th
 🛠️ SQL Sample
 --------------
 ```text
-
 CREATE OR REPLACE VIEW stock_analysis AS
 SELECT 
     symbol,
