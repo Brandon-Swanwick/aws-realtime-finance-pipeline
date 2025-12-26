@@ -51,7 +51,10 @@ By utilizing Lambda and Athena instead of an EC2 instance or an RDS database, th
 
 📊 SQL Sample
 -------------
-
-To analyze the data, I used the following Athena transformation:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   CREATE OR REPLACE VIEW stock_analysis AS  SELECT       symbol,      CAST(price AS DOUBLE) as stock_price,      from_unixtime(CAST(timestamp AS BIGINT)) as trade_time,      CAST(changesPercentage AS DOUBLE) as pct_change  FROM financial_data_table;   `
+.
+├── src/
+│   ├── processor_lambda.py       # Transforming data
+│   ├── producer.py               # Ingesting data
+├── sql/
+│   ├── athena_setup.sql          # Athena setup
+├── README.md                     # Project documentation
