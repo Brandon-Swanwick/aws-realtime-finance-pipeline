@@ -49,7 +49,22 @@ By utilizing Lambda and Athena instead of an EC2 instance or an RDS database, th
 *   **Methodology:** Event-Driven Architecture, Data Lakehouse Design.
     
 
-📊 SQL Sample
+
+🛠️ SQL Sample
+--------------
+```text
+
+CREATE OR REPLACE VIEW stock_analysis AS
+SELECT 
+    symbol,
+    CAST(price AS DOUBLE) as stock_price,
+    from_unixtime(CAST(timestamp AS BIGINT)) as trade_time,
+    CAST(changesPercentage AS DOUBLE) as pct_change
+FROM financial_data_table;
+
+```
+
+🛠️ Project Structure
 -------------
 ```text
 .
